@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --cor-primaria-1: #8bc34a;
+    --cor-primaria-2: #8bc34aa6;
+
+    --cor-neutra-1: #f8fafc;
+    --cor-neutra-2: #24232b;
+    --cor-neutra-3: #13121a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto mono',Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--cor-neutra-3);
+}
+
+div#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+img#senha_imagem{
+    width: 100px;
+}
+
+h1#titulo{
+    color: var(--cor-neutra-1);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+div#senha_container{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-neutra-2);
+    color: var(--cor-neutra-1);
+    border-radius: 8px;
+    padding: 8px 18px;
+}
+
+span#senha{
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button#copy{
+    background-color: transparent;
+    border: none;
+    color: var(--cor-primaria-1);
+    height: 40px;
+    width: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: color .4s;
+}
+
+button#copy:hover{
+    color: var(--cor-primaria-2);
+}
+
+div#senha_items{
+    width: 400px;
+    background-color: var(--cor-neutra-2);
+    color: var(--cor-neutra-1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px;
+}
+
+div.item{
+    display:  flex;
+    gap: 14px;
+}
+
+input#size{
+    width: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+}
+
+input#size::-webkit-inner-spin-button,
+input#size::-webkit-outer-spin-button{
+    opacity: 1;
+}
+
+input#size:focus{
+    outline: 1px solid var(--cor-primaria-1);
+}
+
+button#gerar{
+    background-color: var(--cor-primaria-1);
+    border: none;
+    margin-top: 12px;
+    padding: 10px 0px;
+    border-radius: 4px;
+    color: var(--cor-neutra-3);
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color .4s;
+}
+
+button#gerar:hover{
+    background-color: var(--cor-primaria-2);
+}
